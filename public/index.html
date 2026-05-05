@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build With AI - Event Schedule</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="header-content">
+            <h1>Build With AI</h1>
+            <p class="subtitle">Innovating the Future with Google Technologies</p>
+            <p class="date">May 5, 2026</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <input type="text" id="search-bar" placeholder="Search by category..." aria-label="Search talks by category">
+        </section>
+
+        <section id="schedule-container" class="schedule-container">
+            <!-- Cards will be rendered here dynamically -->
+            <div id="loading" class="status-message">Loading schedule...</div>
+        </section>
+
+        <div id="no-results" class="status-message hidden">No talks found matching your search.</div>
+    </main>
+
+    <footer>
+        <p>See you there 👋</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

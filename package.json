@@ -1,0 +1,12 @@
+{
+  "name": "build-with-ai",
+  "version": "1.0.0",
+  "description": "Event schedule for Build With AI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
