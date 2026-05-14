@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Render schedule items
     function renderSchedule(items) {
         scheduleContainer.innerHTML = '';
-        
+
         items.forEach(item => {
             if (item.type === 'break') {
                 scheduleContainer.appendChild(createBreakCard(item));
@@ -44,11 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function createTalkCard(talk) {
         const initials = talk.speaker.split(' ').map(n => n[0]).join('');
-        
+
         const div = document.createElement('div');
         div.className = 'card talk-card';
         div.dataset.categories = talk.categories.join(',').toLowerCase();
-        
+
         div.innerHTML = `
             <div class="time-slot">${talk.startTime}</div>
             <div class="talk-content">

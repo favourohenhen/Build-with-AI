@@ -3,7 +3,7 @@ const path = require('path');
 const talksData = require('./data/talks');
 
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -37,7 +37,7 @@ app.get('/api/talks', (req, res) => {
       const lunchStart = new Date(currentTime);
       currentTime.setMinutes(currentTime.getMinutes() + 60);
       const lunchEnd = new Date(currentTime);
-      
+
       schedule.push({
         type: 'break',
         label: 'Lunch Break',
